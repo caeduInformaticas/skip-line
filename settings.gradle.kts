@@ -19,3 +19,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "skip-line"
 include(":androidApp")
+include(":iosApp")

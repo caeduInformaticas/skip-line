@@ -1,0 +1,16 @@
+PODS:
+  - skip_line (1.0.0)
+
+DEPENDENCIES:
+  - skip_line (from `../`)
+
+EXTERNAL SOURCES:
+  skip_line:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  skip_line: 55344a76e787a302714c4bd05d2e73fb81cedbfd
+
+PODFILE CHECKSUM: c78df4b027f2fb7aefed4f79e8e837f7b3d9ceae
+
+COCOAPODS: 1.11.3

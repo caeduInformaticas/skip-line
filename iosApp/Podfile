@@ -1,0 +1,11 @@
+platform :ios, '13.0'
+use_frameworks!
+use_modular_headers!
+
+source 'https://cdn.cocoapods.org'
+
+project 'iosApp.xcodeproj'
+
+target 'iosApp' do
+  pod 'skip_line', :path => '../', :inhibit_warnings => true
+end

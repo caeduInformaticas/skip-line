@@ -20,3 +20,4 @@ dependencyResolutionManagement {
 rootProject.name = "skip-line"
 include(":androidApp")
 include(":iosApp")
+include(":shared") // Asegúrate de que este módulo esté incluido

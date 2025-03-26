@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "C41B7EA95452071BF17B7AC397FAAB47"
-               BuildableName = "skip_line"
-               BlueprintName = "skip_line"
+               BlueprintIdentifier = "8777C9F6889E59EFFD631D80AEE9048B"
+               BuildableName = "shared"
+               BlueprintName = "shared"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

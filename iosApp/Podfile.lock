@@ -1,16 +1,16 @@
 PODS:
-  - skip_line (1.0.0)
+  - shared (1.0.0)
 
 DEPENDENCIES:
-  - skip_line (from `../`)
+  - shared (from `../shared`)
 
 EXTERNAL SOURCES:
-  skip_line:
-    :path: "../"
+  shared:
+    :path: "../shared"
 
 SPEC CHECKSUMS:
-  skip_line: 55344a76e787a302714c4bd05d2e73fb81cedbfd
+  shared: f4a1981a4b8d7b6e9076929939d68b0b8181ad6b
 
-PODFILE CHECKSUM: c78df4b027f2fb7aefed4f79e8e837f7b3d9ceae
+PODFILE CHECKSUM: 88f608e046cc913ee69e0be34ef7de1e794debc6
 
 COCOAPODS: 1.11.3

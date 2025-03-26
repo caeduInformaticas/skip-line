@@ -21,30 +21,13 @@ kotlin {
         framework {
             baseName = "shared"
         }
+        // Elimina la configuración incorrecta de podspec
     }
 
     sourceSets {
-        val commonMain by getting {
-            dependencies {
-                implementation(kotlin("stdlib"))
-            }
-        }
-
-        val androidMain by getting {
-            dependencies {
-                implementation("androidx.core:core-ktx:1.10.1")
-            }
-        }
-
-        val iosX64Main by getting
-        val iosArm64Main by getting
-        val iosSimulatorArm64Main by getting
-
+        val commonMain by getting
         val iosMain by creating {
             dependsOn(commonMain)
-            iosX64Main.dependsOn(this)
-            iosArm64Main.dependsOn(this)
-            iosSimulatorArm64Main.dependsOn(this)
         }
     }
 }

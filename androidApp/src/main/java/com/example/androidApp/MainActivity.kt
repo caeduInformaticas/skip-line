@@ -1,20 +1,32 @@
-package com.example.androidApp
-
 import android.os.Bundle
-import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity // Asegúrate de que esto está presente
-import com.example.skipline.Greeting // Importa el Greeting desde commonMain
+import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
+import com.skipline.shared.Validator
 
 class MainActivity : AppCompatActivity() {
+
+    private val validator = Validator()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-        val textView = TextView(this).apply {
-            text = Greeting().sayHello()
-            textSize = 24f
-            setPadding(32, 100, 32, 32)
+        val emailEditText = findViewById<EditText>(R.id.emailEditText)
+        val passwordEditText = findViewById<EditText>(R.id.passwordEditText)
+        val validateButton = findViewById<Button>(R.id.validateButton)
+
+        validateButton.setOnClickListener {
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
+
+            val isEmailValid = validator.validateEmail(email)
+            val isPasswordValid = validator.validatePassword(password)
+
+            Toast.makeText(
+                this,
+                if (isEmailValid && isPasswordValid) "Valid" else "Invalid",
+                Toast.LENGTH_SHORT
+            ).show()
         }
-
-        setContentView(textView)
     }
 }

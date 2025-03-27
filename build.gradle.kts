@@ -21,11 +21,11 @@ kotlin {
         framework {
             baseName = "shared"
         }
-        // Elimina la configuración incorrecta de podspec
     }
 
     sourceSets {
         val commonMain by getting
+        val androidMain by getting
         val iosMain by creating {
             dependsOn(commonMain)
         }

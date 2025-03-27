@@ -1,24 +1,8 @@
-//
-//  ContentView.swift
-//  iosApp
-//
-//  Created by carlos eduardo avalos justiniano on 23/3/25.
-//
-
 import SwiftUI
-
+import shared
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        let greeting = Greeting().greet()
+        Text(greeting)
     }
-}
-
-#Preview {
-    ContentView()
 }

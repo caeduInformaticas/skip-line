@@ -1,5 +1,6 @@
-package com.example.shared
+package com.skipline.shared
 
 expect class Validator {
-    fun validate(input: String): Boolean
+    fun validateEmail(email: String): Boolean
+    fun validatePassword(password: String): Boolean
 }
